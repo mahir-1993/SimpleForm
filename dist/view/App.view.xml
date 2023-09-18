@@ -1,0 +1,7 @@
+<mvc:View
+    controllerName="mmr.abap.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+   <App id="appCon"></App>
+</mvc:View>

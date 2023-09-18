@@ -1,0 +1,89 @@
+{
+    "_version": "1.57.0",
+    "sap.app": {
+        "id": "SimpleFormApp",
+        "description": "Simple Form Application",
+        
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "i18n": "i18n/i18n.properties",
+        "dataSources": {
+            "MMRService": {
+                "settings": {
+                    "odataVersion": "2.0"
+                },
+                "uri": "/sap/opu/odata/sap/ZMMR_2021_SRV",
+                "type": "OData"
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        }
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.87.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.table": {}
+            }
+        },
+        "rootView": {
+            "id": "idAppView",
+            "type": "XML",
+            "viewName": "mmr.abap.view.App"
+        },
+        "routing": {
+            "config": {
+                "viewType": "XML",
+                "viewPath": "mmr.abap.view",
+                "controlId": "appCon",
+                "clearControlAggregation": true
+            },
+            "routes": [
+                {
+                    "name": "master",
+                    "pattern": "",
+                    "target": [
+                        "page1"
+                    ]
+                }
+            ],
+            "targets": {
+                "page1": {
+                    "controlAggregation": "pages",
+                    "viewName": "View1"
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "local": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/mockdata/fruits.json"
+            },
+            "": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "MMRService",
+                "preload": false,
+                "settings": {
+                    "defaultBindingMode": "TwoWay"
+                }
+            }
+        }
+    }
+}

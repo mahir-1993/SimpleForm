@@ -1,0 +1,15 @@
+{
+	"productData": {
+		"PRODUCT_ID": "",
+		"TYPE_CODE": "",
+		"CATEGORY": "",
+		"NAME": "ant",
+		"DESCRIPTION": "",
+		"SUPPLIER_ID": "",
+		"SUPPLIER_NAME": "",
+		"TAX_TARIF_CODE": "",
+		"PRICE": "",
+		"CURRENCY_CODE": "",
+		"DIM_UNIT": ""
+	}
+}

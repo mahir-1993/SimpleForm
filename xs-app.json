@@ -1,0 +1,16 @@
+{
+    "welcomeFile": "webapp/index.html",
+    "authenticationMethod": "none",
+    "routes": [
+        {
+            "authenticationType": "none",
+            "source": "^/sap/opu/odata/sap/ZMMR_2021_SRV",
+            "destination": "REMOTE"
+        },
+        {
+            "source": "^(.*)$",
+            "target": "$1",
+            "service": "html5-apps-repo-rt"
+        }
+    ]
+}

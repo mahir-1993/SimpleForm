@@ -1,0 +1,16 @@
+{
+  "name": "simpleformget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/abap-deploy": "^0.10.27",
+    "@sap/approuter": "^14.3.1",
+    "@sap/html5-repo-mock": "^2.1.5"
+  }
+}

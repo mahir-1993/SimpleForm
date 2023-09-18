@@ -1,0 +1,52 @@
+<mvc:View controllerName="mmr.abap.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+    <Page>
+
+        <form:SimpleForm title="Product Details" editable="true" id="idSimpleForm">
+
+            <Label text="Product Id"></Label>
+            <Input value="{viewModel>/productData/PRODUCT_ID}" width="30%" id="idProduct"></Input>
+            
+            <Label text="Type Code"></Label>
+            <Input value="{viewModel>/productData/TYPE_CODE}" width="30%"></Input>
+
+            <Label text="Category"></Label>
+            <Input value="{viewModel>/productData/CATEGORY}" width="30%"></Input>
+            
+            <Label text="Product Name"></Label>
+            <Input value="{viewModel>/productData/NAME}" width="30%"></Input>
+        
+            <Label text="Description"></Label>
+            <Input value="{viewModel>/productData/DESCRIPTION}" width="30%"></Input>
+                
+            <Label text="Supplier"></Label>
+            <Input value="{viewModel>/productData/SUPPLIER_ID}" width="30%"></Input>
+
+            <Label text="Supplier Name"></Label>
+            <Input value="{viewModel>/productData/SUPPLIER_NAME}" width="30%"></Input>
+
+            <Label text="Price"></Label>
+            <Input value="{viewModel>/productData/TAX_TARIF_CODE}" width="30%"></Input>
+
+            <Label text="Price"></Label>
+            <Input value="{viewModel>/productData/PRICE}" width="30%"></Input>
+
+            <Label text="Currency"></Label>
+            <Input value="{viewModel>/productData/CURRENCY_CODE}" width="30%"></Input>
+
+            <Label text="Unit"></Label>
+            <Input value="{viewModel>/productData/DIM_UNIT}" width="30%"></Input>
+                        
+        </form:SimpleForm>
+
+    <footer>
+        <Toolbar >
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Button text="Create" press="create"></Button>
+            <Button text="Get Value" press="getValue"></Button>
+            <Button text="Delete" press="delete"></Button>
+            <Button text="Update" press="update"></Button>
+        </Toolbar>
+    </footer>
+
+    </Page>
+</mvc:View>
